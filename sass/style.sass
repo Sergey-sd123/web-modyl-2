@@ -1,6 +1,10 @@
 *
   font-family: 'Roboto', sans-serif
 
+$cb: #1CA8C3;
+$cr: #FF5656;
+
+
 nav
   height: 50px
   background: #212121
@@ -152,6 +156,8 @@ header
   text-transform: uppercase
   text-align: center
 
+.mobile
+  padding-top: 50px  
 
 .title
   margin-bottom: 0
@@ -207,8 +213,8 @@ header
   background: url('../img/mobile_bg.png') center (center / cover) no-repeat
   .row
     margin-top: 32px
-
   &-item
+    position: relative
     width: 320px
     height: 280px
     margin: 0 auto
@@ -233,15 +239,54 @@ header
       text-align: center
       text-transform: uppercase
       color: #FFFFFF
-      // &-plus
-      // width: 29px
-      // height: 29px
-      // background-color: #ec1b1b
-      // margin: 0 auto
-      // border-radius: 100%
-      // padding: 6 px
-      // img
-      //   // width: 100%
+    &-plus
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translateX(-50%)
+      width: 29px
+      height: 29px
+      background-color: #000000
+      margin: 0 auto
+      border-radius: 100%
+      cursor: pointer
+
+.uber-position
+  min-height: 900px
+
+.uber-section
+  height: 500px
+  background-color: #070716
+  z-index: -1
+  padding-top: 50px  
+  .uber-title
+    color: #FFFFFF
+  .uber-subtitle  
+    color: #FFFFFF
+  .uber-img
+    display: flex
+    margin: 54px auto 0
+  .uber-lable  
+    font-style: normal
+    font-weight: normal
+    font-size: 11px
+    text-transform: uppercase
+    color: #070716
+    background: #FFFFFF 
+
+.uber-minititle
+  text-align: center
+  font-weight: 300
+  font-size: 17px
+  line-height: 24px
+  color: #222222
+
+
+
+
 
 
 
